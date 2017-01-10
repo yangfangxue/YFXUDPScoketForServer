@@ -15,6 +15,8 @@
 		6A6495B71E24A8A00021590D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6495B51E24A8A00021590D /* LaunchScreen.storyboard */; };
 		6A6495C21E24A8A00021590D /* YFX_UDPScoketServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6495C11E24A8A00021590D /* YFX_UDPScoketServerTests.m */; };
 		6A6495CD1E24A8A00021590D /* YFX_UDPScoketServerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6495CC1E24A8A00021590D /* YFX_UDPScoketServerUITests.m */; };
+		6A6495DE1E24A8CD0021590D /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6495DB1E24A8CD0021590D /* GCDAsyncSocket.m */; };
+		6A6495DF1E24A8CD0021590D /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6495DD1E24A8CD0021590D /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		6A6495C81E24A8A00021590D /* YFX_UDPScoketServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFX_UDPScoketServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6495CC1E24A8A00021590D /* YFX_UDPScoketServerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFX_UDPScoketServerUITests.m; sourceTree = "<group>"; };
 		6A6495CE1E24A8A00021590D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A6495DA1E24A8CD0021590D /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		6A6495DB1E24A8CD0021590D /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		6A6495DC1E24A8CD0021590D /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		6A6495DD1E24A8CD0021590D /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				6A6495AB1E24A8A00021590D /* AppDelegate.m */,
 				6A6495AD1E24A8A00021590D /* ViewController.h */,
 				6A6495AE1E24A8A00021590D /* ViewController.m */,
+				6A6495DA1E24A8CD0021590D /* GCDAsyncSocket.h */,
+				6A6495DB1E24A8CD0021590D /* GCDAsyncSocket.m */,
+				6A6495DC1E24A8CD0021590D /* GCDAsyncUdpSocket.h */,
+				6A6495DD1E24A8CD0021590D /* GCDAsyncUdpSocket.m */,
 				6A6495B01E24A8A00021590D /* Main.storyboard */,
 				6A6495B31E24A8A00021590D /* Assets.xcassets */,
 				6A6495B51E24A8A00021590D /* LaunchScreen.storyboard */,
@@ -207,7 +217,7 @@
 				TargetAttributes = {
 					6A6495A31E24A8A00021590D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 654YYRTASK;
+						DevelopmentTeam = 6R8UQ2XA7K;
 						ProvisioningStyle = Automatic;
 					};
 					6A6495BC1E24A8A00021590D = {
@@ -276,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6495DE1E24A8CD0021590D /* GCDAsyncSocket.m in Sources */,
+				6A6495DF1E24A8CD0021590D /* GCDAsyncUdpSocket.m in Sources */,
 				6A6495AF1E24A8A00021590D /* ViewController.m in Sources */,
 				6A6495AC1E24A8A00021590D /* AppDelegate.m in Sources */,
 				6A6495A91E24A8A00021590D /* main.m in Sources */,
@@ -427,10 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 654YYRTASK;
+				DEVELOPMENT_TEAM = 6R8UQ2XA7K;
 				INFOPLIST_FILE = YFX_UDPScoketServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fangxue.YFX-UDPScoketServer";
+				PRODUCT_BUNDLE_IDENTIFIER = yangfangxue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,10 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 654YYRTASK;
+				DEVELOPMENT_TEAM = 6R8UQ2XA7K;
 				INFOPLIST_FILE = YFX_UDPScoketServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fangxue.YFX-UDPScoketServer";
+				PRODUCT_BUNDLE_IDENTIFIER = yangfangxue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
