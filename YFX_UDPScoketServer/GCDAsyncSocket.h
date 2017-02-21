@@ -13,7 +13,6 @@
 #import <Security/SecureTransport.h>
 #import <dispatch/dispatch.h>
 #import <Availability.h>
-
 #include <sys/socket.h> // AF_INET, AF_INET6
 
 @class GCDAsyncReadPacket;
